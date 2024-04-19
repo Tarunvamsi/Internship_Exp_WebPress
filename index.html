@@ -8,7 +8,7 @@
   <!-- don't forget to remove this >>>>(google tag manager) script, if you are using this page/code -->
   <!-- don't forget to remove this >>>>(google tag manager) script, if you are using this page/code -->
   <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YMWDE0VTD3"></script>
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-YMWDE0VTD3"></script> -->
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() {
@@ -22,7 +22,7 @@
   <!-- don't forget to remove this >>(google site verification meta tag) tag, if you are using this page/code -->
   <!-- don't forget to remove this >>(google site verification meta tag) tag, if you are using this page/code -->
   <!-- don't forget to remove this >>(google site verification meta tag) tag, if you are using this page/code -->
-  <meta name="google-site-verification" content="zMNl24ruDnyqiliYwKNU_r09OkPCDKz0kMBtF9nqiCc" />
+  <!-- <meta name="google-site-verification" content="zMNl24ruDnyqiliYwKNU_r09OkPCDKz0kMBtF9nqiCc" /> -->
   <!-- don't forget to remove this >>(google site verification meta tag) tag, if you are using this page/code -->
   <!-- don't forget to remove this >>(google site verification meta tag) tag, if you are using this page/code -->
   <!-- don't forget to remove this >>(google site verification meta tag) tag, if you are using this page/code -->
@@ -434,14 +434,20 @@ The outing was an excellent way to bond with my team members and strengthen prof
                     aria-label="Visit Pexelicons on GitHub">
                     <img src="src/svg/github.svg" alt="github redirect button" />
                   </a> -->
-                  <a href="https://vinodjangid.site/Pexelicons/" target="_blank" class="cta"
-                    aria-label="Visit Pexelicons Live">
+                  <a href="#" class="cta" id="liveViewButton" aria-label="Visit Pexelicons Live">
                     <span>Live view</span>
                     <svg viewBox="0 0 13 10" height="10px" width="15px">
-                      <path d="M1,5 L11,5"></path>
-                      <polyline points="8 1 12 5 8 9"></polyline>
+                        <path d="M1,5 L11,5"></path>
+                        <polyline points="8 1 12 5 8 9"></polyline>
                     </svg>
-                  </a>
+                </a>
+                
+                <!-- Container for the embedded iframe -->
+                <div id="presentationContainer" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 1000;">
+                    <iframe loading="lazy" id="presentationIframe" style="width: 100%; height: 100%; border: none; margin: 0; padding: 0;"
+                        src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGC2tdGHaA&#x2F;7RaQsAO8HA2oHRO-Irzs7g&#x2F;view?embed" allowfullscreen="allowfullscreen">
+                    </iframe>
+                </div>
                 </div>
               </div>
               <div class="image-div">
@@ -453,13 +459,15 @@ The outing was an excellent way to bond with my team members and strengthen prof
           <div class="project-box-wrapper" data-aos="fade-up">
             <div class="project-box project-box5" id="project-box5">
               <div class="info-div">
-                <img src="src/webp/cropped-1086600-192x192.webp" alt="comickaze website favicon"
-                  class="faviconforProject" />
-                <article class="ProjectHeading">ComicKaze</article>
+                <div style="display: flex; align-items: center;">
+                  <img src="src/webp/colruyticon-r.png" alt="pexelicon website favicon" class="faviconforProject" style="margin-right: 10px;" />
+                  <article class="ProjectHeading">Building Strong Bonds</article>
+              </div>
                 <p class="ProjectDescription">
-                  ComicKaze is an ecommerce website built on wordpress by me
-                  as a freelancer. It specializes in selling anime
-                  merchandise.
+                  Since starting the internship, one of the best parts has been forming a good relationship with our seniors. 
+                  Their open and friendly communication helps us talk freely, ask questions, and learn more about the company.
+                   These connections not only help us understand the business better, but they also create a supportive atmosphere for personal and professional growth.
+                    This special bond is a highlight of our internship.
                 </p>
                 <div class="project-buttons">
                   <a href="https://comickaze.in" target="_blank" class="cta" aria-label="Visit Comickaze live">
@@ -472,7 +480,7 @@ The outing was an excellent way to bond with my team members and strengthen prof
                 </div>
               </div>
               <div class="image-div">
-                <img src="src/webp/comickaze-preview.webp" alt="comickaze website preview image" />
+                <img src="src/webp/seniors_g.jpg" alt="comickaze website preview image" />
               </div>
             </div>
           </div>
@@ -489,10 +497,10 @@ The outing was an excellent way to bond with my team members and strengthen prof
                   for event registrations.
                 </p>
                 <div class="project-buttons">
-                  <a href="https://github.com/vinodjangid07/Aquaregia" target="_blank" class="github-redirect"
+                  <!-- <a href="https://github.com/vinodjangid07/Aquaregia" target="_blank" class="github-redirect"
                     aria-label="Visit Aquaregia on GitHub">
                     <img src="src/svg/github.svg" alt="github redirect button" />
-                  </a>
+                  </a> -->
                   <a href="https://vinodjangid.site/Aquaregia/" target="_blank" class="cta"
                     aria-label="Visit Aquaregia Live">
                     <span>Live view</span>
@@ -683,7 +691,7 @@ The outing was an excellent way to bond with my team members and strengthen prof
 
   <script>
     function openURL() {
-      var url = "src/pdf/Vinod Jangid Resume.pdf";
+      var url = "src/pdf/PUSARLA TARUN VAMSI_Resume.pdf";
 
       window.open(url, "_blank");
     }
@@ -762,7 +770,55 @@ document.addEventListener("fullscreenchange", function () {
 
 
   </script>
-  <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="vinod.jangid07" data-description="Support me on Buy me a coffee!" data-message="" data-color="#BD5FFF" data-position="left" data-x_margin="18" data-y_margin="18"></script>
+  <script>
+    document.getElementById('liveViewButton').addEventListener('click', function(event) {
+        // Prevent default action
+        event.preventDefault();
+        
+        // Show the presentation container
+        var presentationContainer = document.getElementById('presentationContainer');
+        presentationContainer.style.display = 'block';
+        
+        // Request full screen
+        var presentationIframe = document.getElementById('presentationIframe');
+        if (presentationIframe.requestFullscreen) {
+            presentationIframe.requestFullscreen();
+        } else if (presentationIframe.webkitRequestFullscreen) {
+            presentationIframe.webkitRequestFullscreen();
+        } else if (presentationIframe.mozRequestFullScreen) {
+            presentationIframe.mozRequestFullScreen();
+        } else if (presentationIframe.msRequestFullscreen) {
+            presentationIframe.msRequestFullscreen();
+        }
+    });
+
+    // Listen for exiting full screen mode and hide the presentation container
+    document.addEventListener('fullscreenchange', function() {
+        if (!document.fullscreenElement) {
+            document.getElementById('presentationContainer').style.display = 'none';
+        }
+    });
+
+    // Additional event listeners for browser-specific full screen exit events
+    document.addEventListener('webkitfullscreenchange', function() {
+        if (!document.webkitIsFullScreen) {
+            document.getElementById('presentationContainer').style.display = 'none';
+        }
+    });
+
+    document.addEventListener('mozfullscreenchange', function() {
+        if (!document.mozFullScreen) {
+            document.getElementById('presentationContainer').style.display = 'none';
+        }
+    });
+
+    document.addEventListener('msfullscreenchange', function() {
+        if (!document.msFullscreenElement) {
+            document.getElementById('presentationContainer').style.display = 'none';
+        }
+    });
+</script>
+  <!-- <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="vinod.jangid07" data-description="Support me on Buy me a coffee!" data-message="" data-color="#BD5FFF" data-position="left" data-x_margin="18" data-y_margin="18"></script> -->
 </body>
 
 </html>
